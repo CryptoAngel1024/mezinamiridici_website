@@ -1,0 +1,55 @@
+{
+  "_id" : "LL",
+  "auth": {
+    "email": "leos@literak.cz",
+    "oauth": ["GOOGLE", "INSTAGRAM"],
+    "pwdHash": "$2a$10$EgZrIC7jmLGatzhLZeolAuJzL1peobCO5sTUIYa1c2XKNCRRNd2WO",
+    "pwdTimestamp": "2020-03-22 16:46",
+    "verified": true,
+    "verifyToken": "ABCDEFGH",
+    "reset": {
+      "token": "QWERTY",
+      "expires": "2020-03-22 16:46"
+    }
+  },
+  "roles": ["admin:poll"],
+  "bio": {
+    "nickname": "literakl",
+    "sex": "man",
+    "born": 1975,
+    "region": "PRG",
+    "edu": "university",
+    "registered": "2020-03-22 16:46",
+    "about": "A short description about me."
+  },
+  "driving": {
+    "since": 2007,
+    "vehicles": ["car"]
+  },
+  "honors": {
+    "rank": "novice",
+    "date": "2020-03-22 16:46",
+    "sharingWeeksList": [[23, true], [24, false], [25, true], [26, true], [27, true], [28, false], [29, true]],
+    "count": {
+      "pollVotes": 0,
+      "comments": 0,
+      "commentVotes": 0,
+      "blogs": 0,
+      "shares": 0,
+      "commentVoteRatio": 66,
+      "sharingWeeks": 1
+    }
+  },
+  "prefs": {
+    "public": true,
+    "email": {
+      "newsletter": true,
+      "summary": "daily"
+    }
+  },
+  "consent": {
+    "terms": "2020-03-22 16:46",
+    "data": "2020-03-22 16:46",
+    "email": "2020-03-22 16:46"
+  }
+}

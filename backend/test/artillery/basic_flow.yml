@@ -1,0 +1,44 @@
+config:
+  target: "http://localhost:3000"
+  environments:
+    localhost:
+      target: "http://localhost:3000"
+    lan:
+      target: "http://10.0.0.3:4000"
+    nginx:
+      target: "https://beta.mezinamiridici.cz/api"
+  phases:
+    - duration: 300
+      arrivalRate: 100
+      name: Sustained load
+
+scenarios:
+  - name: "Simple flow"
+    flow:
+      - get:
+          url: "/bff/polls/last"
+          gzip: true
+      - get:
+          url: "/v1/item-stream?start=0&ps=10"
+          gzip: true
+      - get:
+          url: "/v1/item-stream?start=10&ps=10"
+          gzip: true
+      - get:
+          url: "/bff/polls/stihnu-aspon-duben"
+          gzip: true
+      - get:
+          url: "/bff/items/1f30acourh/comments"
+          gzip: true
+      - get:
+          url: "/v1/posts/test-with-pictures"
+          gzip: true
+      - get:
+          url: "/v1/users/leos"
+          gzip: true
+      - get:
+          url: "/v1/users/leos/activity?type=blog&ps=10&start=0"
+          gzip: true
+      - get:
+          url: "/v1/pages/napoveda"
+          gzip: true
